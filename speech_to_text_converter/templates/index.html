@@ -1,0 +1,15 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech to Text Converter</title>
+</head>
+<body>
+    <h1>Speech to Text Converter</h1>
+    <form method="post" enctype="multipart/form-data" action="/convert">
+        <input type="file" name="audio_file" accept="audio/*" required>
+        <button type="submit">Convert</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
